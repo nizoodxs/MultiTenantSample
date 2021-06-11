@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "C+NNOA+jxUE/cQni6k93L/BQ+G2Fn1y/BnV09EqGFvyzk6ktVSR+sYinSuNF4Z8U9tsy6LKMZOweFzcaSpkMIQ==",
+  "success": true,
+  "projectFilePath": "F:\\repos\\MultiTenantSample\\MultiTenantSample\\MultiTenantSample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\subed\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
