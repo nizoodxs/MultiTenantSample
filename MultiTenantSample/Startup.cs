@@ -25,6 +25,11 @@ namespace MultiTenantSample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("MultiTenantSample-v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "MultiTenantSample", Version = "v1" });
+            });
+
             services.AddControllers();
         }
 
@@ -35,6 +40,12 @@ namespace MultiTenantSample
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/MultiTenantSample-v1/swagger.json", "MultiTenantSample API v1");
+            });
 
             app.UseHttpsRedirection();
 
